@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= title + ' | ' + appname
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    link(rel="stylesheet", href="/bootstrap/bootstrap.css")
+    link(rel="stylesheet", href="/stylesheets/main.css")
+  style.
+    body {
+      background-image: url('/1.jpg');
+      background-repeat: repeat;
+
+    }
+
+    head {
+
+    }
+  body
+    .container
+      .navbar
+        .container
+          .navbar-header
+            a.navbar-brand(href='/')= appname
+      .alert.alert-dismissable
+      block content
+  script(src='/javascripts/jquery.js', type="text/javascript")
+  script(src='/javascripts/main.js', type="text/javascript")
